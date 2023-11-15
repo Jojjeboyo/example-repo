@@ -1,0 +1,45 @@
+.landingpage {
+    display: grid;
+    gap: 2rem 2rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.landingpage h1 {
+    grid-column: span 3;
+}
+
+.box {
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+
+.box-noborder {
+    padding: 1rem;
+}
+
+.span1 {
+    grid-column: span 1;
+}
+
+.span2 {
+    grid-column: span 2;
+}
+
+.span3 {
+    grid-column: span 3;
+}
+
+.tech-menu {
+    width: 30%;
+}
+
+.tech-content {
+    width: 60%;
+}
+
+.single-technology {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
