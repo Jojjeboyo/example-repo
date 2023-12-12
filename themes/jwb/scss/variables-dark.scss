@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+
+$header-font: 'Lato', sans-serif;
+//$main-font: 'Playfair Display', serif;
+$main-font: 'Slabo 27px', serif;
+
+
+/* Darkmode */
+$color-light: #2c2c2c;
+$color-mediumlight: #1f1f1f;
+$color-medium: #141414;
+$color-mediumdark: #0a0a0a;
+$color-dark: #000;
+$color-yellow: #fc0;
+$color-white: rgb(255, 255, 255);
+$color-black: #000;
+
+
+$primary-color: $color-yellow;
+$background-color: $color-mediumlight;
+$main-color: $color-light;
+$text-color: $color-white;
+$link-color: $color-white;
+$link-hover-color: $color-white;
+$header-bg-color: $color-medium;
+$footer-bg-color: $color-medium;
+$footer-text-color: $color-white;
+$footer-border-color: $primary-color;
+$p-footer: $color-white;
+$border-color: $color-white;
+$shadow-color: $color-dark;
+$color-text: $color-white;
+$h1-border: $color-white;
+
+/*
+
+$primary-color: $color-yellow;
+$background-color: $color-mediumlight;
+$main-color: $color-light;
+$text-color: $color-white;
+$link-color: $color-white;
+$link-hover-color: $color-white;
+$header-bg-color: $color-medium;
+$footer-bg-color: $color-medium;
+$footer-text-color: $color-white;
+$footer-border-color: $primary-color;
+$border-color: $color-white;
+$shadow-color: $color-dark;
+$color-text: $color-white;
+$h1-border: $color-mediumlight;
+*/

@@ -3,6 +3,7 @@
  * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Playfair+Display&display=swap");
 .fa,
 .fas,
 .far,
@@ -6422,6 +6423,15 @@ template {
   display: none;
 }
 
+:root {
+  --color-light: #d4e1c5;
+  --color-mediumlight: #aed581;
+  --color-medium: #8bc34a;
+  --color-mediumdark: #689f38;
+  --color-dark: #33691e;
+}
+
+/* Lightmode */
 /* Typografy */
 body {
   font-family: sans-serif;
@@ -6434,28 +6444,30 @@ p, td, th, li, dd {
   overflow-wrap: break-word;
   word-wrap: break-word;
   font-family: "Playfair Display", serif;
+  color: var(--color-dark);
 }
 
 p {
   margin-bottom: 1.4rem;
   font-size: 1.1rem;
+  color: var(--color-dark);
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.6em;
   font-weight: bold;
   font-family: "Lato", sans-serif;
+  color: var(--color-dark);
 }
 
 img {
   max-width: 100%;
 }
 
-/*
 body {
-    background-color: $background-color;
+  background-color: var(--color-mediumlight);
 }
-*/
+
 * {
   box-sizing: border-box;
   border: 0 none;
@@ -6485,17 +6497,28 @@ body {
   width: 64em;
   margin: 0 auto;
   flex: 1 0 auto;
+  background-color: var(--color-light);
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .header, .footer {
   flex: 0 0 auto;
 }
 
+@media (max-width: 767px) {
+  .main {
+    width: 90%;
+  }
+}
 /* Header */
 .header, .site-header {
   display: flex;
   justify-content: space-between;
   border-bottom: 4px solid #fc0;
+  background-color: var(--color-medium);
 }
 
 /* Title */
@@ -6515,7 +6538,7 @@ body {
   }
 }
 .title * {
-  color: #111;
+  color: var(--color-dark);
 }
 
 .title p {
@@ -6528,7 +6551,7 @@ body {
 }
 
 .nav a:hover {
-  border-bottom: 4px solid #fc0;
+  border-bottom: 4px solid var(--color-dark);
 }
 
 /* Footer */
@@ -6536,17 +6559,21 @@ body {
   display: flex;
   justify-content: space-between;
   border-top: 4px solid #fc0;
-  background-color: #373737;
-  color: #fff;
+  background-color: var(--color-medium);
+  color: var(--color-dark);
   padding: 4rem 6rem;
 }
 
 .footer a {
-  color: #fff;
+  color: var(--color-dark);
 }
 
 .footer .social {
   font-size: 2rem;
+}
+
+.social a {
+  text-decoration: none;
 }
 
 /* Blockquote */
@@ -6554,7 +6581,7 @@ blockquote {
   font-style: italic;
   margin-left: 1em;
   padding-left: 1em;
-  border-left: 0.5em solid #f5f5f5;
+  border-left: 0.5em solid var(--color-mediumlight);
 }
 
 /* Code */
@@ -6563,17 +6590,18 @@ code {
   padding: 0.1em 0.2em;
   border: 1px solid #ccc;
   border-radius: 0.3em;
-  background: #f5f5f5;
+  background: var(--color-mediumlight);
   font-family: monospace;
   font-size: 0.85rem;
   line-height: 1.9824;
+  color: var(--color-dark);
 }
 
 pre {
   padding: 0 1em;
   border: 1px solid #ccc;
   border-radius: 0.3em;
-  background: #f5f5f5;
+  background: var(--color-mediumlight);
 }
 
 pre code {
@@ -6604,7 +6632,7 @@ pre code {
 }
 
 .nav a, .nav-toggle {
-  color: #333;
+  color: var(--color-dark);
 }
 
 .nav-toggle {
@@ -6650,7 +6678,7 @@ pre code {
 }
 
 .box {
-  border: 1px solid #ccc;
+  border: 3px solid white;
   padding: 1rem;
 }
 
@@ -6683,4 +6711,30 @@ pre code {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+@media (max-width: 767px) {
+  .landingpage {
+    display: grid;
+    gap: 2rem 2rem;
+    grid-template-columns: 1fr;
+  }
+  .landingpage h1 {
+    grid-column: span 1;
+  }
+  .span1 {
+    grid-column: span 3;
+  }
+  .span2 {
+    grid-column: span 3;
+  }
+  .span3 {
+    grid-column: span 3;
+  }
+  .tech-menu {
+    display: none;
+  }
+  .tech-content {
+    width: 90%;
+  }
 }

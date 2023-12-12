@@ -1,12 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Playfair+Display&display=swap');
+
 $header-font: 'Lato', sans-serif;
 $main-font: 'Playfair Display', serif;
 
+:root {
+    --color-light: #d4e1c5;
+    --color-mediumlight: #aed581;
+    --color-medium: #8bc34a;
+    --color-mediumdark: #689f38;
+    --color-dark: #33691e;
+}
 
-$primary-color: #fc0;
-$background-color: #f5f5f5;
-$text-color: #333;
-$link-color: #111;
-$link-hover-color: $primary-color;
-$footer-bg-color: #373737;
-$footer-text-color: #fff;
+/* Lightmode */
+$color-light: var(--color-light);
+$color-mediumlight: var(--color-mediumlight);
+$color-medium: var(--color-medium);
+$color-mediumdark: var(--color-mediumdark);
+$color-dark: var(--color-dark);
+$color-yellow: #fc0;
+$color-white: rgb(255, 255, 255);
+$color-black: #000;
+
+$primary-color: $color-yellow;
+$background-color: $color-mediumlight;
+$main-color: $color-light;
+$text-color: $color-light;
+$link-color: $color-light;
+$link-hover-color: $color-light;
+$header-bg-color: $color-dark;
+
+$footer-bg-color: $color-dark;
 $footer-border-color: $primary-color;
+$footer-text-color: $color-light;
+$p-footer: $color-light;
+
+$border-color: $color-white;
+$shadow-color: $color-medium;
+$color-text: $color-dark;
+$h1-border: $color-mediumdark;

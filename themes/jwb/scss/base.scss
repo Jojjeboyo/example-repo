@@ -1,8 +1,8 @@
-/*
+
 body {
     background-color: $background-color;
 }
-*/
+
 
 * {
     box-sizing: border-box;
@@ -33,10 +33,51 @@ body {
 .main {
     //width: 80%;
     width: 64em;
+    //width: 767px;
     margin: 0 auto;
     flex: 1 0 auto;
+    background-color: $main-color;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .header, .footer {
     flex: 0 0 auto;
 }
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+}
+}
+
+
+@media (max-width: 64em) {
+    .main {
+        width: 90%;
+    }
+}
+
+/*
+@media (max-width: 767px) {
+    .main {
+        width: 90%;
+    }
+}
+*/

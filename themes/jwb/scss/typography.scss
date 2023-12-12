@@ -11,17 +11,25 @@ p, td, th, li, dd {
     overflow-wrap: break-word;
     word-wrap: break-word;
     font-family: $main-font;
+    color: $color-text;
 }
 
 p {
     margin-bottom: 1.4rem;
     font-size: 1.1rem;
+    color: $color-text;
 }
 
 h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0.6em;
     font-weight: bold;
     font-family: $header-font;
+    color: $color-text;
+}
+
+.main h1 {
+    text-align: center;
+    border-bottom: 5px dotted $h1-border;
 }
 
 img {

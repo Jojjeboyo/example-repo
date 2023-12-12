@@ -9,8 +9,10 @@
 }
 
 .box {
-    border: 1px solid #ccc;
+    border: 3px solid $border-color;
     padding: 1rem;
+    box-shadow: 5px 10px $shadow-color;
+    margin-bottom: 20px;
 }
 
 .box-noborder {
@@ -42,4 +44,36 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+}
+
+@media (max-width: 767px) {
+    .landingpage {
+        display: grid;
+        gap: 2rem 2rem;
+        grid-template-columns: 1fr;
+    }
+    
+    .landingpage h1 {
+        grid-column: span 1;
+    }
+
+    .span1 {
+        grid-column: span 3;
+    }
+
+    .span2 {
+        grid-column: span 3;
+    }
+
+    .span3 {
+        grid-column: span 3;
+    }
+
+    .tech-menu {
+        display: none;
+    }
+
+    .tech-content {
+        width: 90%;
+    }
 }
